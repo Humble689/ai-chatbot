@@ -16,7 +16,7 @@ tokenizer, model = load_model()
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
 
-st.title("Offline AI Chatbot")
+st.title(" The T Offline AI Chatbot")
 
 # Display chat history
 for message in st.session_state.chat_history:
