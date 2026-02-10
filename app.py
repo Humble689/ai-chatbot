@@ -47,7 +47,7 @@ if st.button("Send"):
                 if chat_history_ids is not None:
                     chat_history_ids = torch.cat([chat_history_ids, bot_input_ids], dim=-1)
                 else:
-                    chat_history_ids = bot_input_ids
+                    chat_history_ids = bot_input_ids 
 
         # Generate response
         with torch.no_grad():
