@@ -5,4 +5,4 @@
 - [x] Create README.md with setup instructions
 - [x] Set up Python virtual environment
 - [x] Install dependencies
-- [ ] Run the Streamlit app
+- [x] Run the Streamlit app
