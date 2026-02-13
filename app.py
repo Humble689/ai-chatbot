@@ -16,7 +16,11 @@ tokenizer, model = load_model()
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
 
-st.title(" The T Offline AI Chatbot")
+# Initialize encoded chat history (for efficiency)
+if 'chat_history_ids' not in st.session_state:
+    st.session_state.chat_history_ids = None
+
+st.title("The AI Offline Chatbot")
 
 # Display chat history
 for message in st.session_state.chat_history:
